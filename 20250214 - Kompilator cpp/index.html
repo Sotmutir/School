@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ online compiler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>C++ online compiler</h1>
+    </header>
+
+    <main>
+        <div class="files">
+            <div class="line" style="justify-content: left;">
+                <h2 style="margin-right: 25px;">Files</h2>
+                <button id="add-file">+</button>
+                <button id="remove-file">-</button>
+            </div>
+
+            <div id="files-tree">
+                <div class="file">Main.cpp</div>
+            </div>
+        </div>
+
+        <form action="/" method="post" id="form" class="left">
+            <div class="line">
+                <h2>Input</h2>
+                
+                <div style="display: flex; flex-direction: row; gap: 25px;">
+                    <button type="button" id="save">Save</button>
+                    <input type="submit" value="Compile">
+                </div>
+            </div>
+
+            <textarea name="code" id="code"></textarea>
+        </form>
+
+        <div class="right">
+            <div class="line">
+                <h2>Output</h2>
+            </div>
+
+            <div id="output"></div>
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy;Jan Matysik, Kacper Majocha, Julian Machowski - 3Tp</small>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
